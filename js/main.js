@@ -44,9 +44,6 @@ const AddBook = () => {
   });
 }
 
-function delbook() {
-  booksData.filter(book => book);
-}
 
 const removeBook = () => {
   const removeBtns = document.querySelectorAll('.remove-btn');
