@@ -1,5 +1,5 @@
 // import { booksData } from "./booksData.js";
-const booksData = [];
+let booksData = [];
 
 const allbooksContainer = document.querySelector('.books-container');
 const titleInput = document.querySelector('#title');
@@ -29,7 +29,7 @@ const AddBook = () => {
     this.title = title;
     this.author = author;
   }
-
+  
   addBtn.addEventListener('click', (e) => {
     if (titleInput.value === '' || authorInput.value === '') {
       e.preventDefault();
@@ -42,19 +42,21 @@ const AddBook = () => {
       removeBook();
     }
   });
-}
 
+}
+const delBookFromCollection = (i) => {
+  let neWbooksData = booksData.filter((book) => book !== booksData[i]);
+  booksData = neWbooksData;
+}
 
 const removeBook = () => {
   const removeBtns = document.querySelectorAll('.remove-btn');
   removeBtns.forEach((btn, i) => {
     btn.addEventListener('click', () => {
       btn.parentElement.remove();
+      delBookFromCollection(i);
     });
   });
-  
 }
 
 AddBook();
-
-
