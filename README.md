@@ -2,7 +2,7 @@
 
 > a Web App where you can store books and remove them
 
-![screenshot]()
+![screenshot](https://github.com/youmari/Awesome-books/blob/style-core/img/screen.png)
 
 Additional description about the project and its features.
 
