@@ -65,11 +65,15 @@ const addBook = () => {
   });
 };
 
-window.addEventListener('load', () => {
-  getBooksFromLocal();
-  booksData.forEach((book) => {
-    createElement(book);
-  });
+window.addEventListener('load', (e) => {
+  if (localStorage.getItem('books') === null) {
+    e.preventDefault();
+  } else {
+    getBooksFromLocal();
+    booksData.forEach((book) => {
+      createElement(book);
+    });
+  }
 });
 
 addBook();
