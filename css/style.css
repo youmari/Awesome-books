@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: burlywood;
+  background-color: burlywood;
 }
 
 main {
@@ -70,7 +70,8 @@ p {
   padding: 10px;
 }
 
-nav, footer {
+nav,
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +88,6 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-
 }
 
 nav ul a {
