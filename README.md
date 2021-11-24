@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@Vvic778](https://github.com/vic778)
 - Twitter: [@victoirBarh](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh
+- LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
 
 ## Author 2
 
