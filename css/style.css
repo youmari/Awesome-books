@@ -46,3 +46,23 @@ p {
   margin: 20px 0;
   background-color: black;
 }
+
+#add-btn {
+  float: right;
+  font-size: 1em;
+  width: 60px;
+  height: 30px;
+}
+
+.new-book,
+.main-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#title,
+#author {
+  height: 25px;
+  font-size: 20px;
+  padding: 10px;
+}
