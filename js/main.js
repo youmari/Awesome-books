@@ -41,11 +41,15 @@ class Library {
     const bookContainer = document.createElement('article');
     const bookTitle = document.createElement('h4');
     const bookAuthor = document.createElement('h5');
+    const by = document.createElement('p');
+    const textContainer = document.createElement('div');
     const removeBtn = document.createElement('button');
 
     allbooksContainer.append(bookContainer);
     bookContainer.classList.add('book-info-conatiner');
-    bookContainer.append(bookTitle, bookAuthor, removeBtn);
+    bookContainer.append(textContainer, removeBtn);
+    textContainer.append(bookTitle, by, bookAuthor);
+    textContainer.classList.add('text-con');
     bookTitle.classList.add('title-book');
     bookAuthor.classList.add('author-book');
     removeBtn.classList.add('remove-btn');
@@ -54,6 +58,7 @@ class Library {
     bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
     this.removeBook(removeBtn, book);
+    by.textContent = 'by';
   }
 
   addBook() {

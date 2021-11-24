@@ -2,3 +2,67 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.books-container {
+  border: 3px solid black;
+  width: 50%;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.text-con {
+  display: flex;
+  align-items: center;
+}
+
+h4,
+h5 {
+  font-size: 1.6em;
+}
+
+p {
+  margin: 0 8px;
+}
+
+.remove-btn {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.line {
+  border: 2px solid black;
+  width: 30%;
+  margin: 20px 0;
+  background-color: black;
+}
+
+#add-btn {
+  float: right;
+  font-size: 1em;
+  width: 60px;
+  height: 30px;
+}
+
+.new-book,
+.main-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#title,
+#author {
+  height: 25px;
+  font-size: 20px;
+  padding: 10px;
+}

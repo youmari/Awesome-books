@@ -1,9 +1,8 @@
-
 # Awesome Books
 
 > a Web App where you can store books and remove them
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://github.com/youmari/Awesome-books/blob/style-core/img/screen.png)
 
 Additional description about the project and its features.
 
@@ -13,29 +12,20 @@ Additional description about the project and its features.
 - CSS
 - VANILLA JAVASCRIPT
 
-
-
-
 ## Getting Started
 
 **to use this repo is straight forward clone and open index.html.**
-
-
-
 To get a local copy up and running follow these simple example steps.
-
-
 
 ### Deployment
     clone the project and open index.html in your browser
-
-## Author 1
 
 👤 **Victor Barh**
 
 - GitHub: [@Vvic778](https://github.com/vic778)
 - Twitter: [@victoirBarh](https://twitter.com/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
+
 
 ## Author 2
 
