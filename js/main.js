@@ -6,6 +6,7 @@ const authorInput = document.querySelector('#author');
 const addBtn = document.querySelector('#add-btn');
 const { DateTime } = luxon;
 const date = DateTime.now().toFormat('LLL dd yyyy, t');
+const timeP = document.querySelector('.date');
 
 class BookDetails {
   constructor(title, author) {
