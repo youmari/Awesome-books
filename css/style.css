@@ -70,7 +70,7 @@ p {
   padding: 10px;
 }
 
-nav {
+nav, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,4 +110,11 @@ nav li::after {
   margin-left: 15px;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
