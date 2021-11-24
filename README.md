@@ -19,7 +19,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
     clone the project and open index.html in your browser
+    
+## Author 1
 
+👤 **Bhagyashree Patra**
+
+- GitHub: [@Vagyasri](https://github.com/Vagyasri)
+- Twitter: [@Vagyasri](https://twitter.com/Vagyasri)
+- LinkedIn: [Bhagyashree Patra](https://www.linkedin.com/in/bhagyashree-patra-029bb059/)    
+
+## Author 2
 👤 **Victor Barh**
 
 - GitHub: [@Vvic778](https://github.com/vic778)

@@ -8,12 +8,28 @@
   <title>Welcome to Awesome Books</title>
 </head>
 <body>
+   <nav>
+     <h3 class="logo">Awesome books</h3>
+     <ul>
+       <li>
+         <a class="link books" href="#list">List</a>
+       </li>
+       <li>
+         <a class="link add-books" href="#add-new">Add new</a>
+       </li>
+       <li>
+         <a class="link contact-form" href="#contact">Contact</a>
+       </li>
+     </ul>
+   </nav>
+   <p class="date"></p>
   <main class="main">
     <h1 class="main-title">All awesome Books</h1>
-    <div class="books-container ">
+    <div class="books-container" id="list">
     </div>
     <hr class="line">
-    <h2 class="new-book">add a new book</h2>
+    <section class="form" id="add-new">
+      <h2 class="new-book">add a new book</h2>
       <form action="#" class="add-books-container">
         <label for="title"></label>
         <input type="text" name="title" id="title" placeholder="Title" required><br>
@@ -22,7 +38,21 @@
         <br><br>
         <input type="button" id="add-btn" value="Add">
       </form>
+    </section>
+    
   </main>
+  <section class="contact-container" id="contact">
+    <h2 class="new-book">Contact information</h2>
+    <p>Feel free to reach out to us...</p>
+    <ul class="contact">
+           <li>Email: xyz@microverse.com</li>   
+           <li>Phone Number: 0123456789</li>
+           <li>Address: <i>123 xyz chaine, lorem ipsum, 55678</i></li> 
+    </ul>
+  </section>
+  <footer> © Copyright ...</footer>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/navigation.js"> </script>
 </body>
 </html>

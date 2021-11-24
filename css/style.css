@@ -3,11 +3,14 @@
   padding: 0;
 }
 
+body {
+  background-color: burlywood;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: burlywood;
 }
 
 .books-container {
@@ -60,9 +63,69 @@ p {
   margin-bottom: 20px;
 }
 
+.main-title {
+  margin-top: 40px;
+}
+
 #title,
 #author {
   height: 25px;
   font-size: 20px;
   padding: 10px;
+}
+
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid black;
+  height: 40px;
+}
+
+footer {
+  position: absolute;
+  top: 93%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: black;
+}
+
+nav li {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-right: 4px solid black;
+}
+
+.logo {
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.date {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 5px;
+  text-align: right;
 }

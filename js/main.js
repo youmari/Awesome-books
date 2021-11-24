@@ -1,8 +1,12 @@
 /* eslint-disable  max-classes-per-file */
+/* eslint-disable  no-undef */
 const allbooksContainer = document.querySelector('.books-container');
 const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
 const addBtn = document.querySelector('#add-btn');
+const { DateTime } = luxon;
+const date = DateTime.now().toFormat('LLL dd yyyy, t');
+const timeP = document.querySelector('.date');
 
 class BookDetails {
   constructor(title, author) {
@@ -84,6 +88,7 @@ class Library {
         this.getBooksFromLocal();
         this.booksData.forEach((book) => {
           this.createElement(book);
+          timeP.textContent = date;
         });
       }
     });
