@@ -81,6 +81,7 @@ class Library {
 
   display() {
     window.addEventListener('load', (e) => {
+      this.timeP.textContent = this.date;
       if (localStorage.getItem('books') === null) {
         e.preventDefault();
       } else {
@@ -89,7 +90,6 @@ class Library {
           this.createElement(book);
         });
       }
-      this.timeP.textContent = this.date;
     });
   }
 }
