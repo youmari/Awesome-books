@@ -1,13 +1,6 @@
 /* eslint-disable  max-classes-per-file */
 /* eslint-disable  no-undef */
-const allbooksContainer = document.querySelector('.books-container');
-const titleInput = document.querySelector('#title');
-const authorInput = document.querySelector('#author');
-const addBtn = document.querySelector('#add-btn');
 const { DateTime } = luxon;
-const date = DateTime.now().toFormat('LLL dd yyyy, t');
-const timeP = document.querySelector('.date');
-
 class BookDetails {
   constructor(title, author) {
     this.title = title;
@@ -16,6 +9,12 @@ class BookDetails {
 }
 class Library {
   constructor() {
+    this.allbooksContainer = document.querySelector(".books-container");
+    this.titleInput = document.querySelector("#title");
+    this.authorInput = document.querySelector("#author");
+    this.addBtn = document.querySelector("#add-btn");
+    this.date = DateTime.now().toFormat("LLL dd yyyy, t");
+    this.timeP = document.querySelector(".date");
     this.booksData = [];
   }
 
@@ -49,7 +48,7 @@ class Library {
     const textContainer = document.createElement('div');
     const removeBtn = document.createElement('button');
 
-    allbooksContainer.append(bookContainer);
+    this.allbooksContainer.append(bookContainer);
     bookContainer.classList.add('book-info-conatiner');
     bookContainer.append(textContainer, removeBtn);
     textContainer.append(bookTitle, by, bookAuthor);
@@ -66,16 +65,16 @@ class Library {
   }
 
   addBook() {
-    addBtn.addEventListener('click', (e) => {
-      if (titleInput.value === '' || authorInput.value === '') {
+    this.addBtn.addEventListener('click', (e) => {
+      if (this.titleInput.value === '' || this.authorInput.value === '') {
         e.preventDefault();
       } else {
-        const book = new BookDetails(titleInput.value, authorInput.value);
+        const book = new BookDetails(this.titleInput.value, this.authorInput.value);
         this.booksData.push(book);
         this.createElement(book);
         this.storeBooksInLocal();
-        titleInput.value = '';
-        authorInput.value = '';
+        this.titleInput.value = '';
+        this.authorInput.value = '';
       }
     });
   }
@@ -88,9 +87,9 @@ class Library {
         this.getBooksFromLocal();
         this.booksData.forEach((book) => {
           this.createElement(book);
-          timeP.textContent = date;
         });
       }
+      this.timeP.textContent = this.date;
     });
   }
 }
