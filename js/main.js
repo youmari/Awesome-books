@@ -9,12 +9,12 @@ class BookDetails {
 }
 class Library {
   constructor() {
-    this.allbooksContainer = document.querySelector(".books-container");
-    this.titleInput = document.querySelector("#title");
-    this.authorInput = document.querySelector("#author");
-    this.addBtn = document.querySelector("#add-btn");
-    this.date = DateTime.now().toFormat("LLL dd yyyy, t");
-    this.timeP = document.querySelector(".date");
+    this.allbooksContainer = document.querySelector('.books-container');
+    this.titleInput = document.querySelector('#title');
+    this.authorInput = document.querySelector('#author');
+    this.addBtn = document.querySelector('#add-btn');
+    this.date = DateTime.now().toFormat('LLL dd yyyy, t');
+    this.timeP = document.querySelector('.date');
     this.booksData = [];
   }
 
